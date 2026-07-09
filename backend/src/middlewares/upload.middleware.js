@@ -42,7 +42,7 @@ const upload = multer({
     }
 }).single('file')
 
-const uploadCsv = (req, res, next) => {
+const uploadCsvFile = (req, res, next) => {
     upload(req, res, (error) => {
         if (error instanceof multer.MulterError && error.code === 'LIMIT_FILE_SIZE') {
             return res.status(400).json({
@@ -69,4 +69,4 @@ const uploadCsv = (req, res, next) => {
     })
 }
 
-module.exports = { uploadCsv }
+module.exports = { uploadCsvFile }
