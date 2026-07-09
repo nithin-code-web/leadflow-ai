@@ -1,8 +1,9 @@
-const previewFile = async (req,res) => {
+const previewCsv
+ = async (req,res) => {
     try{
         return res.status(200).json({
             success:true,
-            message:"preview endpoint is working.."
+            message:"preview received file data.."
         })
     } catch (error) {
         res.status(500).send({
@@ -13,5 +14,6 @@ const previewFile = async (req,res) => {
 }
 
 module.exports = {
-    previewFile
+ previewCsv
+
 }

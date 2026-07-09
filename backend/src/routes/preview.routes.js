@@ -1,9 +1,13 @@
 const express = require('express')
 const router = express.Router();
 const { 
-    previewFile,
+    previewCsv,
  } = require('../controllers/preview.controller');
 
- router.post('/preview',previewFile)
+ const { 
+    uploadCsv
+ } = require('../middlewares/upload.middleware')
+ 
+ router.post('/preview',uploadCsv,previewCsv)
 
  module.exports = router;
