@@ -1,4 +1,4 @@
-const { getCsvImportById } = require('../services/csv/importCsv.service')
+const { processImport } = require('../services/csv/importCsv.service')
 
 const importCsvFile = async (req,res) => {
     try{
@@ -11,24 +11,18 @@ const importCsvFile = async (req,res) => {
             })
         }
 
-        const importedCsv = getCsvImportById(importId)
-
-        if (!importedCsv) {
-            return res.status(404).json({
-                success:false,
-                message:"import data not found"
-            })
-        }
+        const result = await processImport(importId)
 
         return res.status(200).json({
             success:true,
             importId,
-            data: importedCsv
+            headers: result.headers,
+            mapping: result.mapping
         })
     } catch(error) {
-        res.status(500).json({
+        res.status(error.statusCode || 500).json({
             success:false,
-            message:"server error",
+            message:error.statusCode ? error.message : "server error",
             error:error.message
         })
     }
