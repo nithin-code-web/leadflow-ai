@@ -16,6 +16,12 @@ const parseCsvFile = async (filePath) => {
         throw new Error(`CSV parsing failed: ${firstError.message}`)
     }
 
+    try{
+        await fs.unlink(filePath)
+    } catch (error) {
+        console.error("Failed to delete uploaded CSV:",error.message)
+    }
+
     return {
         rows: result.data,
         headers: result.meta.fields || [],

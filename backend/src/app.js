@@ -4,6 +4,7 @@ const app = express()
 const previewRouter = require('./routes/preview.routes')
 const importRouter = require('./routes/import.routes')
 const geminiRouter = require('./routes/gemini.routes')
+const { errorMiddleware } = require('./middlewares/error.middleware')
 app.use(express.json())
 
 //
@@ -14,5 +15,7 @@ app.get('/health',(req,res) => {
         message:"LeadFlow AI Backend is running.."
     })
 })
+
+app.use(errorMiddleware)
 
 module.exports = app

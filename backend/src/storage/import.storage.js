@@ -8,7 +8,12 @@ const getImportData = (importId) => {
     return imports.get(importId)
 }
 
+const deleteImportData = (importId) => {
+    imports.delete(importId)
+}
+
 module.exports = {
     storeImportData,
-    getImportData
+    getImportData,
+    deleteImportData
 }
