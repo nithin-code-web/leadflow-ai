@@ -20,7 +20,7 @@ const previewCsvFile = async (req,res) => {
     return res.status(200).json({
         success:true,
         importId,
-        preview: parsedCsv.rows,
+        preview: parsedCsv.rows.slice(0,5),
         headers: parsedCsv.headers,
         totalRows: parsedCsv.totalRows
     })

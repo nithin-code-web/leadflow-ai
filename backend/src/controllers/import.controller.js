@@ -13,6 +13,7 @@ const importCsvFile = async (req,res) => {
 
     return res.status(200).json({
         success:true,
+        mapping: result.mapping,
         importId,
         records: result.records
     })
