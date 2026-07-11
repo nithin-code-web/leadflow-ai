@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, cb) => {
         const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`
-        cb(null, `${uniqueSuffix}-${file.originalname}`)
+        cb(null,`${uniqueSuffix}.csv`)
     }
 })
 
@@ -62,6 +62,15 @@ const uploadCsvFile = (req, res, next) => {
             return res.status(400).json({
                 success: false,
                 message: 'CSV file is required'
+            })
+        }
+
+        if (req.file.size === 0) {
+            fs.unlink(req.file.path, () => {})
+
+            return res.status(400).json({
+                success: false,
+                message: 'CSV file is empty'
             })
         }
 
