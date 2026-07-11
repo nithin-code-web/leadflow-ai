@@ -65,6 +65,15 @@ const uploadCsvFile = (req, res, next) => {
             })
         }
 
+        if (req.file.size === 0) {
+            fs.unlink(req.file.path, () => {})
+
+            return res.status(400).json({
+                success: false,
+                message: 'CSV file is empty'
+            })
+        }
+
         next()
     })
 }
