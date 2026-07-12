@@ -22,7 +22,7 @@
 
 | | Link | Platform |
 |--|------|----------|
-| 🎨 **Frontend** | [leadflow-n5y1s4d17-nithin-dev.vercel.app](https://leadflow-n5y1s4d17-nithin-dev.vercel.app/) | [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://leadflow-n5y1s4d17-nithin-dev.vercel.app/) |
+| 🎨 **Frontend** | [https://leadflow-ai-sooty.vercel.app/](https://leadflow-n5y1s4d17-nithin-dev.vercel.app/) | [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://leadflow-n5y1s4d17-nithin-dev.vercel.app/) |
 | ⚙️ **Backend API** | [leadflow-ai-t3d7.onrender.com](https://leadflow-ai-t3d7.onrender.com/) | [![Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?style=flat-square&logo=render&logoColor=black)](https://leadflow-ai-t3d7.onrender.com/) |
 
 > **Note:** The Render backend is on a free tier — it may take **~30 seconds** to wake up on the first request.
@@ -250,7 +250,7 @@ leadflow-ai/
 
 ## 📡 API Reference
 
-### `GET /health`
+### `GET /`
 
 Health check endpoint.
 
@@ -271,7 +271,7 @@ Upload a CSV file and receive a preview + import session.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `file` | File | `.csv` file, max 5 MB |
+| `file` | File | `.csv` file, max 10 MB |
 
 **Response `200`**
 ```json

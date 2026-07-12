@@ -14,8 +14,9 @@ app.use(express.json())
 //
 app.use('/api/v1',previewRouter,importRouter,geminiRouter)
 
-app.get('/health',(req,res) => {
+app.get('/',(req,res) => {
     res.status(200).json({
+        success:true,
         message:"LeadFlow AI Backend is running.."
     })
 })
