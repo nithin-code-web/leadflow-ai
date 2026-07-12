@@ -9,7 +9,23 @@
 ![React](https://img.shields.io/badge/React-19.x-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI-4285F4?style=flat-square&logo=google&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
+
+</div>
+
+---
+
+## 🌐 Live Demo
+
+<div align="center">
+
+| | Link | Platform |
+|--|------|----------|
+| 🎨 **Frontend** | [leadflow-n5y1s4d17-nithin-dev.vercel.app](https://leadflow-n5y1s4d17-nithin-dev.vercel.app/) | [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://leadflow-n5y1s4d17-nithin-dev.vercel.app/) |
+| ⚙️ **Backend API** | [leadflow-ai-t3d7.onrender.com](https://leadflow-ai-t3d7.onrender.com/) | [![Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?style=flat-square&logo=render&logoColor=black)](https://leadflow-ai-t3d7.onrender.com/) |
+
+> **Note:** The Render backend is on a free tier — it may take **~30 seconds** to wake up on the first request.
 
 </div>
 
@@ -20,6 +36,22 @@
 One of the biggest pain points in CRM onboarding is **inconsistent CSV column names**. Every sales team exports data differently — `"Full Name"`, `"Name"`, `"Contact"`, `"Client"` all mean the same thing but break manual import pipelines.
 
 **LeadFlow AI** solves this completely. Upload any CSV, and Google Gemini AI reads the column headers, understands their intent, and maps them to a standardized CRM schema automatically. No manual mapping. No template downloads. No failed imports.
+
+---
+
+## 🖼️ Screenshots
+
+### Upload & Preview
+
+![LeadFlow AI — Upload Screen](./docs/screenshots/screenshot-upload.png)
+
+*Drag & drop your CSV file into the upload zone. The 4-step progress tracker guides you through the entire import flow.*
+
+### AI Mapping & CRM Results
+
+![LeadFlow AI — Results Screen](./docs/screenshots/screenshot-results.png)
+
+*After running the AI import, Gemini maps every CSV column to its CRM field (shown in amber → green). The results table supports live search and pagination.*
 
 ---
 
