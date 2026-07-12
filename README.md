@@ -9,7 +9,6 @@
 ![React](https://img.shields.io/badge/React-19.x-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI-4285F4?style=flat-square&logo=google&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
 
 </div>
@@ -444,12 +443,6 @@ Contributions, ideas, and pull requests are welcome!
 5. Open a Pull Request
 
 Please follow [Conventional Commits](https://www.conventionalcommits.org/) for commit messages.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
